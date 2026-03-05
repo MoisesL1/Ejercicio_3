@@ -14,3 +14,16 @@ for(int x = 0; x < cant; x++)
 
     notas.Add(estudiante, nota);
 }
+
+Console.WriteLine("Ingrese el ID del estudiante que desea ver: ");
+estudiante = Console.ReadLine();
+
+if (notas.ContainsKey(estudiante) == true)
+{
+    Console.WriteLine(notas[estudiante]);
+}
+
+else
+{
+    Console.WriteLine("Ingreso un nombre invalido. ");
+}
